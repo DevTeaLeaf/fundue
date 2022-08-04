@@ -1,10 +1,8 @@
+import React from "react";
+import { Home } from "./pages/Home.jsx";
+
 function App() {
-  return (
-    <div>
-      <h1>Hello!</h1>
-      <button className="ml-48">Login</button>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
