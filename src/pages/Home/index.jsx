@@ -1,12 +1,12 @@
 import React from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 import "./home.css";
 
 export const Home = () => {
   return (
     <div>
-      <Header />
+      <Header isAuth={true} />
       <div className="home-wrapper">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white  pl-[140px]">

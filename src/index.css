@@ -6,6 +6,9 @@
   .container {
     @apply max-w-[1920px];
   }
+  .min-container {
+    @apply max-w-[1210px];
+  }
 }
 
 body {

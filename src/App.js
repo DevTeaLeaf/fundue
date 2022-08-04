@@ -1,8 +1,10 @@
 import React from "react";
-import { Home } from "./pages/Home.jsx";
+import { Home } from "./pages/Home";
+import { Error404 } from "./pages/Error404";
+import { Checkout } from "./pages/Checkout";
 
 function App() {
-  return <Home />;
+  return <Checkout />;
 }
 
 export default App;
