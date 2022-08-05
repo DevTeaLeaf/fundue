@@ -4,9 +4,10 @@ import { Error404 } from "./pages/Error404";
 import { Checkout } from "./pages/Checkout";
 import { Terms } from "./pages/Terms";
 import { FAQ } from "./pages/FAQ";
+import { Round } from "./pages/Round";
 
 function App() {
-  return <FAQ />;
+  return <Round />;
 }
 
 export default App;
