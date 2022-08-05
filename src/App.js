@@ -6,9 +6,11 @@ import { Terms } from "./pages/Terms";
 import { FAQ } from "./pages/FAQ";
 import { Round } from "./pages/Round";
 import { Discover } from "./pages/Discover";
+import { PersonalAccount } from "./pages/PersonalAccount";
+import { PublicProfile } from "./pages/PublicProfile";
 
 function App() {
-  return <Discover />;
+  return <PublicProfile />;
 }
 
 export default App;
