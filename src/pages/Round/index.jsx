@@ -66,7 +66,7 @@ export const Round = () => {
           <div className=" pl-[15px] w-1/3">
             <div className="flex flex-wrap w-full bg-[#FCFCFC] py-[26px] px-[30px] relative rounded-xl border-solid border-[1px] border-[#E3E4EA]">
               <div className="text-center relative z-10 w-full">
-                <h2 className="  font-normal text-[#838B9E] text-sm">
+                <h2 className="font-normal text-[#838B9E] text-sm">
                   Until the end of Request accept
                 </h2>
                 <p className="leading-relaxed mt-5 font-normal text-xl mb-5">

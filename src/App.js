@@ -5,9 +5,10 @@ import { Checkout } from "./pages/Checkout";
 import { Terms } from "./pages/Terms";
 import { FAQ } from "./pages/FAQ";
 import { Round } from "./pages/Round";
+import { Discover } from "./pages/Discover";
 
 function App() {
-  return <FAQ />;
+  return <Discover />;
 }
 
 export default App;
