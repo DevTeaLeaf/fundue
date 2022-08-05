@@ -8,9 +8,10 @@ import { Round } from "./pages/Round";
 import { Discover } from "./pages/Discover";
 import { PersonalAccount } from "./pages/PersonalAccount";
 import { PublicProfile } from "./pages/PublicProfile";
+import { EditProfil } from "./pages/EditProfil";
 
 function App() {
-  return <PublicProfile />;
+  return <EditProfil />;
 }
 
 export default App;
