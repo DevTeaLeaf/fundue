@@ -7,7 +7,7 @@ import { FAQ } from "./pages/FAQ";
 import { Round } from "./pages/Round";
 
 function App() {
-  return <Round />;
+  return <FAQ />;
 }
 
 export default App;

@@ -9,10 +9,10 @@ import down from "../../assets/img/down.png";
 export const Header = (props) => {
   return (
     <header>
-      <nav className="h-[72px] bg-white">
-        <div className="container flex flex-wrap justify-between items-center mx-auto px-[90px] py-[19px]">
+      <nav className=" bg-white">
+        <div className="container flex flex-wrap justify-between items-center mx-auto px-[90px] h-[72px] relative">
           <div className="flex justify-between items-center">
-            <div className="flex justify-between items-center pr-[75px]">
+            <div className="flex justify-between items-center pr-[75px] nav1">
               <a className="pr-[15px] font-medium" href="#">
                 Discover
               </a>
@@ -20,7 +20,7 @@ export const Header = (props) => {
                 Rounds
               </a>
             </div>
-            <div className="flex justify-between items-center pl-[75px]">
+            <div className="flex justify-between items-center pl-[75px] nav2">
               <a className="font-light pr-[15px]" href="#">
                 NEAR
               </a>
@@ -29,7 +29,10 @@ export const Header = (props) => {
               </a>
             </div>
           </div>
-          <a href="#">
+          <a
+            href="#"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex w-[194px] h-[20px]"
+          >
             <img src={logo} alt="Fundue logo" />
           </a>
           <div className="flex justify-between items-center">

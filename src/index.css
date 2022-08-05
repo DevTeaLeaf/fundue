@@ -10,7 +10,50 @@
     @apply max-w-[1210px];
   }
 }
-
+.fnav2 {
+  margin-right: 250px;
+}
+@media screen and (max-width: 1670px) {
+  .nav2 {
+    padding-left: 0;
+  }
+  .nav1 {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .nav2,
+  .nav1 {
+    display: none;
+  }
+  .fnav2 {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .fnav2 div {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .fnav2 a,
+  .fnav1 a {
+    margin-right: 10px;
+    display: flex;
+    padding: 0;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  .fnav1 div {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;

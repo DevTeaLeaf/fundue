@@ -86,7 +86,22 @@ export const FAQ = () => {
               <h3 className="text-base font-semibold mb-5">
                 Amet minim mollit non
               </h3>
-              <p>Добавить ul после того как Дима сверстает</p>
+              <ul className="font-normal text-sm text-[#838B9E] list-disc pl-5">
+                <li className="mb-1">
+                  <div></div>
+                  <p>
+                    Exercitation veniam consequat sunt nostrud amet. Velit
+                    officia consequat duis enim velit mollit.
+                  </p>
+                </li>
+                <li className="mb-1">
+                  Velit officia consequat duis enim velit mollit.
+                </li>
+                <li className="mb-1">
+                  Amet minim mollit non deserunt ullamco est Exercitation veniam
+                  consequat sunt nostrud amet.
+                </li>
+              </ul>
             </div>
             <div className="text-[#838B9E] font-normal text-xs">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

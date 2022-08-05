@@ -8,14 +8,14 @@ import discord from "../../assets/img/contacts/discord.png";
 export const Footer = () => {
   return (
     <footer>
-      <nav className="h-[160px] bg-black">
+      <nav className=" bg-black">
         <div className="container flex justify-between items-start mx-auto px-[90px] py-[36px] text-white">
-          <div className="flex justify-between items-start min-w-[500px]">
+          <div className="flex justify-between items-start  min-w-[500px]">
             <div>
               <img className="pb-3" src={footerLogo} alt="Logo" />
               <p className="font-normal text-xs">© 2022 Fundue</p>
             </div>
-            <div className="flex flex-wrap justify-between ">
+            <div className="flex flex-wrap fnav1 justify-between ">
               <div className="flex flex-wrap items-start flex-col pr-[40px]">
                 <a className="font-normal pb-1.5 text-sm" href="#">
                   Rounds
@@ -37,7 +37,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap justify-between px-[250px]">
+          <div className="flex flex-wrap justify-between fnav2">
             <div className="flex flex-wrap items-start flex-col pr-[100px]">
               <a className="pb-1.5 font-normal text-xs" href="#">
                 NEAR
