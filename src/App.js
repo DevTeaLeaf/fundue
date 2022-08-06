@@ -9,9 +9,11 @@ import { Discover } from "./pages/Discover";
 import { PersonalAccount } from "./pages/PersonalAccount";
 import { PublicProfile } from "./pages/PublicProfile";
 import { EditProfil } from "./pages/EditProfil";
+import { SingleProject } from "./pages/SingleProject";
+import { SingleProjectOwner } from "./pages/SingleProjectOwner";
 
 function App() {
-  return <EditProfil />;
+  return <SingleProjectOwner />;
 }
 
 export default App;
