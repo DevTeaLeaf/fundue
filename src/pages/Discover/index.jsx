@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+import { Footer } from "./ui/Footer";
 import rocket from "../../assets/img/rocket.png";
 import arrow from "../../assets/img/arrow.png";
 
@@ -8,20 +8,8 @@ import calculator from "../../assets/img/calculator.png";
 import people from "../../assets/img/people.png";
 import pie from "../../assets/img/pie.png";
 
-import ex1 from "../../assets/img/ex1.png";
-import ex2 from "../../assets/img/ex2.png";
-import ex3 from "../../assets/img/ex3.png";
-import ex4 from "../../assets/img/ex4.png";
-import ex5 from "../../assets/img/ex5.png";
-import ex6 from "../../assets/img/ex6.png";
-
-import p1 from "../../assets/img/p1.png";
-import p2 from "../../assets/img/p2.png";
-import p3 from "../../assets/img/p3.png";
-import p4 from "../../assets/img/p4.png";
-import p5 from "../../assets/img/p5.png";
-import p6 from "../../assets/img/p6.png";
-import p7 from "../../assets/img/p7.png";
+import { Carousel } from "./ui/Carousel";
+import { OurDevs } from "./ui/OurDevs";
 
 export const Discover = () => {
   return (
@@ -157,96 +145,12 @@ export const Discover = () => {
       <div className="min-container mx-auto font-semibold text-[24px] leading-7 mb-[30px]">
         Projects borned with Fundue
       </div>
-      <div className="container mx-auto flex items-center justify-between mb-[60px] flex-wrap">
-        <img src={ex1} alt="ex1" />
-        <img src={ex2} alt="ex2" />
-        <img src={ex3} alt="ex3" />
-        <img src={ex4} alt="ex4" />
-        <img src={ex5} alt="ex5" />
-        <img src={ex6} alt="ex6" />
-      </div>
+      <Carousel />
       <div className="min-container mx-auto mb-[116px]">
         <div className="font-semibold text-[24px] leading-7 mb-[30px]">
           Our developer communities
         </div>
-        <div className="flex items-center justify-between flex-wrap">
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p1} alt="p1" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">John Doe</h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Xareral
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p2} alt="p2" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">Kobe Cook</h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Abebanj
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p3} alt="p3" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">
-                Victor Parker
-              </h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Avineriei
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p4} alt="p4" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">
-                Hassan Torres
-              </h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Wyuzana
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p5} alt="p5" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">
-                Xaviero Campbell
-              </h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Betell
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p6} alt="p6" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">Anthony A.</h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Filv
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col ">
-              <img className="w-[90px] h-[90px]" src={p7} alt="p7" />
-              <h3 className="font-medium text-sm mb-1 mt-[18px]">
-                Aaron Gonzalez
-              </h3>
-              <p className="text-[#6398FE] leading-4 text-[12px] font-medium">
-                @Domanere
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center align-center mt-[30px]">
-          <div className="w-2 h-2 bg-[#6398FE] rounded-full cursor-pointer"></div>
-          <div className="w-2 h-2 bg-[#E5E5E5] rounded-full mx-6 cursor-pointer"></div>
-          <div className="w-2 h-2 bg-[#E5E5E5] rounded-full cursor-pointer"></div>
-        </div>
+        <OurDevs/>
       </div>
       <Footer />
     </>

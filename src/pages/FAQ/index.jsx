@@ -1,7 +1,8 @@
 import React from "react";
 import "./faq.css";
 import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+import { Footer } from "./ui/Footer";
+
 import qm from "../../assets/img/qm.png";
 import arrow from "../../assets/img/arrow.png";
 

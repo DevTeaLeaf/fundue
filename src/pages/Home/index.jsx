@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import "./home.css";
@@ -75,12 +77,7 @@ export const Home = () => {
                         <p className="text-center text-[#838B9E] text-xs mb-2">
                           Apply for the Round
                         </p>
-                        <button
-                          type="button"
-                          className="text-white bg-gradient-to-br from-[#30CFF2] to-[#6792FF] hover:bg-gradient-to-br font-medium rounded-xl text-xs px-[21px] py-[9px] text-center"
-                        >
-                          Connect Wallet
-                        </button>
+                        <Button text="Connect Wallet" p="px-[21px] py-[9px]" />
                       </div>
                     </div>
                   </div>

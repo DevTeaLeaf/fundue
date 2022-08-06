@@ -1,7 +1,7 @@
 import React from "react";
 import "./terms.css";
 import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+import { Footer } from "./ui/Footer";
 import paper from "../../assets/img/paperTerms.png";
 import arrow from "../../assets/img/arrow.png";
 

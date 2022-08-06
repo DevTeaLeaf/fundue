@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { Button } from "../components/Button";
 import pageNotFound from "../assets/img/pageNotFound.png";
 
 export const Error404 = () => {
@@ -13,12 +14,7 @@ export const Error404 = () => {
         <p className="mt-[15px] mb-[60px] font-normal text-[#85878F] text-sm">
           Page not found
         </p>
-        <button
-          type="button"
-          className="text-white bg-gradient-to-br from-[#30CFF2] to-[#6792FF] hover:bg-gradient-to-br font-medium rounded-xl text-xs px-[21px] py-[9px] text-center"
-        >
-          Back to home page
-        </button>
+        <Button text="Back to home page" p="px-[21px] py-[9px]" />
       </div>
       <Footer />
     </div>

@@ -36,10 +36,16 @@ export const Header = (props) => {
             <img src={logo} alt="Fundue logo" />
           </a>
           <div className="flex justify-between items-center">
-            <img className="pr-[12px]" src={search} alt="Search" />
+            <div className="pr-[12px] cursor-pointer">
+              <img src={search} alt="Search" />
+            </div>
             {props.isAuth ? (
               <>
-                <img className="px-[12px]" src={cart} alt="Cart" />
+                <img
+                  className="px-[12px] cursor-pointer"
+                  src={cart}
+                  alt="Cart"
+                />
                 <div className="flex justify-between items-center pl-[12px]">
                   <img src={user} alt="User" />
                   <p className="px-[12px]">JhoneDoe1212</p>

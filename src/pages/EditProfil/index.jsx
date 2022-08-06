@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { Button } from "../../components/Button";
 import arrow from "../../assets/img/arrow.png";
 
 export const EditProfil = () => {
@@ -96,13 +97,8 @@ export const EditProfil = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <button
-            type="button"
-            className="text-white bg-gradient-to-br from-[#30CFF2] to-[#6792FF] hover:bg-gradient-to-br font-medium rounded-xl text-xs px-[60px] py-[8px] text-center mb-[58px]"
-          >
-            Save
-          </button>
+        <div className="flex justify-center items-center mb-[58px]">
+          <Button text="Save" p="px-[60px] py-[8px]" />
         </div>
       </div>
       <Footer />
