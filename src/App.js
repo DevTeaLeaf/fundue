@@ -11,9 +11,10 @@ import { PublicProfile } from "./pages/PublicProfile";
 import { EditProfil } from "./pages/EditProfil";
 import { SingleProject } from "./pages/SingleProject";
 import { SingleProjectOwner } from "./pages/SingleProjectOwner";
+import { SingleRound } from "./pages/SingleRound";
 
 function App() {
-  return <SingleProjectOwner />;
+  return <SingleRound />;
 }
 
 export default App;
