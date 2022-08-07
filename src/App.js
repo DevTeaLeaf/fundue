@@ -15,6 +15,10 @@ import { EditProfil } from "./pages/EditProfil";
 import { SingleProject } from "./pages/SingleProject";
 import { SingleProjectOwner } from "./pages/SingleProjectOwner";
 import { SingleRound } from "./pages/SingleRound";
+import { Step1 } from "./pages/Apply/Step1";
+import { Step2 } from "./pages/Apply/Step2";
+import { Step3 } from "./pages/Apply/Step3";
+import { Step4 } from "./pages/Apply/Step4";
 
 function App() {
   return (
@@ -35,6 +39,10 @@ function App() {
           element={<SingleProjectOwner />}
         ></Route>
         <Route path="/singleRound" element={<SingleRound />}></Route>
+        <Route path="/apply/step-1" element={<Step1 />}></Route>
+        <Route path="/apply/step-2" element={<Step2 />}></Route>
+        <Route path="/apply/step-3" element={<Step3 />}></Route>
+        <Route path="/apply/step-4" element={<Step4 />}></Route>
         <Route path="*" element={<Error404 />}></Route>
       </Routes>
     </>
