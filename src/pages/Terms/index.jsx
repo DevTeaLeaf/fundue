@@ -5,6 +5,8 @@ import { Footer } from "./ui/Footer";
 import paper from "../../assets/img/paperTerms.png";
 import arrow from "../../assets/img/arrow.png";
 
+import { Link } from "react-router-dom";
+
 export const Terms = () => {
   return (
     <>
@@ -27,9 +29,9 @@ export const Terms = () => {
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <p className="text-[#6398FE] font-medium text-xs">
+            <Link className="text-[#6398FE] font-medium text-xs" to="/">
               Back to Home page
-            </p>
+            </Link>
           </div>
         </div>
         <div className="mb-[114px] p-[30px]">

@@ -6,6 +6,8 @@ import { Footer } from "../../components/Footer";
 import { Table } from "./ui/Table";
 import arrow from "../../assets/img/arrow.png";
 
+import { Link } from "react-router-dom";
+
 export const Rounds = () => {
   return (
     <>
@@ -25,9 +27,9 @@ export const Rounds = () => {
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <p className="text-[#6398FE] font-medium text-xs">
+            <Link className="text-[#6398FE] font-medium text-xs" to="/">
               Back to Home page
-            </p>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-between mb-[30px]">

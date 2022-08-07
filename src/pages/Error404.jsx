@@ -4,6 +4,8 @@ import { Footer } from "../components/Footer";
 import { Button } from "../components/Button";
 import pageNotFound from "../assets/img/pageNotFound.png";
 
+import { Link } from "react-router-dom";
+
 export const Error404 = () => {
   return (
     <div>
@@ -14,7 +16,9 @@ export const Error404 = () => {
         <p className="mt-[15px] mb-[60px] font-normal text-[#85878F] text-sm">
           Page not found
         </p>
-        <Button text="Back to home page" p="px-[21px] py-[9px]" />
+        <Link to="/">
+          <Button text="Back to home page" p="px-[21px] py-[9px]" />
+        </Link>
       </div>
       <Footer />
     </div>

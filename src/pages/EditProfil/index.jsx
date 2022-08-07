@@ -4,15 +4,20 @@ import { Footer } from "../../components/Footer";
 import { Button } from "../../components/Button";
 import arrow from "../../assets/img/arrow.png";
 
+import { Link } from "react-router-dom";
+
 export const EditProfil = () => {
   return (
     <>
       <Header isAuth={true} />
       <div className="min-container mx-auto">
-        <div className="flex items-end justify-end my-[30px] mr-[30px] cursor-pointer">
+        <Link
+          className="flex items-end justify-end my-[30px] mr-[30px] cursor-pointer"
+          to="/personalAccount"
+        >
           <img src={arrow} alt="arrow" />
           <p className="text-[#6398FE] font-medium text-xs">Back to Profile</p>
-        </div>
+        </Link>
         <div className="mb-[4px] p-[30px]">
           <div className="flex items-center justify-between text-3xl font-bold mb-[30px]">
             Edit Profil

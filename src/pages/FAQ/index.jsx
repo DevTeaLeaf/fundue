@@ -6,6 +6,8 @@ import { Footer } from "./ui/Footer";
 import qm from "../../assets/img/qm.png";
 import arrow from "../../assets/img/arrow.png";
 
+import { Link } from "react-router-dom";
+
 export const FAQ = () => {
   return (
     <>
@@ -26,9 +28,9 @@ export const FAQ = () => {
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <p className="text-[#6398FE] font-medium text-xs">
+            <Link className="text-[#6398FE] font-medium text-xs" to="/">
               Back to Home page
-            </p>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-between mb-6">

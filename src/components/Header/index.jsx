@@ -6,6 +6,8 @@ import cart from "../../assets/img/cart.png";
 import user from "../../assets/img/user.png";
 import down from "../../assets/img/down.png";
 
+import { Link } from "react-router-dom";
+
 export const Header = (props) => {
   return (
     <header>
@@ -13,27 +15,29 @@ export const Header = (props) => {
         <div className="container flex flex-wrap justify-between items-center mx-auto px-[90px] h-[72px] relative">
           <div className="flex justify-between items-center">
             <div className="flex justify-between items-center pr-[75px] nav1">
-              <a className="pr-[15px] font-medium" href="#">
+              <Link className="pr-[15px] font-medium" to="/discover">
                 Discover
-              </a>
-              <a className="pl-[15px] font-medium" href="#">
+              </Link>
+              <Link className="pl-[15px] font-medium" to="/rounds">
                 Rounds
-              </a>
+              </Link>
             </div>
             <div className="flex justify-between items-center pl-[75px] nav2">
-              <a className="font-light pr-[15px]" href="#">
+              <Link className="font-light pr-[15px]" to="*">
                 NEAR
-              </a>
-              <a className="font-light pl-[15px]" href="#">
+              </Link>
+              <Link className="font-light pl-[15px]" to="*">
                 Learn NEAR Club
-              </a>
+              </Link>
             </div>
           </div>
           <a
             href="#"
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex w-[194px] h-[20px]"
           >
-            <img src={logo} alt="Fundue logo" />
+            <Link to="/">
+              <img src={logo} alt="Fundue logo" />
+            </Link>
           </a>
           <div className="flex justify-between items-center">
             <div className="pr-[12px] cursor-pointer">
@@ -46,9 +50,14 @@ export const Header = (props) => {
                   src={cart}
                   alt="Cart"
                 />
-                <div className="flex justify-between items-center pl-[12px]">
-                  <img src={user} alt="User" />
-                  <p className="px-[12px]">JhoneDoe1212</p>
+                <div className="flex justify-between items-center pl-[12px] cursor-pointer">
+                  <Link
+                    className="flex justify-between items-center"
+                    to="/personalAccount"
+                  >
+                    <img src={user} alt="User" />
+                    <p className="px-[12px]">JhoneDoe1212</p>
+                  </Link>
                   <img src={down} alt="Down" />
                 </div>
               </>

@@ -5,6 +5,8 @@ import telegram from "../../../assets/img/contacts/telegram.png";
 import twitter from "../../../assets/img/contacts/twitter.png";
 import discord from "../../../assets/img/contacts/discord.png";
 
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <footer>
@@ -17,34 +19,37 @@ export const Footer = () => {
             </div>
             <div className="flex flex-wrap fnav1 justify-between ">
               <div className="flex flex-wrap items-start flex-col pr-[40px]">
-                <a className="font-normal pb-1.5 text-sm" href="#">
+                <Link className="font-normal pb-1.5 text-sm" to="/rounds">
                   Rounds
-                </a>
-                <a className="font-normal text-sm text-[#6398FE]" href="#">
+                </Link>
+                <Link
+                  className="font-normal text-sm text-[#6398FE]"
+                  to="/discover"
+                >
                   Discover
-                </a>
+                </Link>
               </div>
               <div className="flex flex-wrap justify-between items-start flex-col pl-[40px]">
-                <a className="font-normal text-xs " href="#">
+                <Link className="font-normal text-xs" to="/terms">
                   Terms
-                </a>
-                <a className="py-1.5 font-normal text-xs" href="#">
+                </Link>
+                <Link className="py-1.5 font-normal text-xs" to="*">
                   Privacy
-                </a>
-                <a className="font-normal text-xs" href="#">
+                </Link>
+                <Link className="font-normal text-xs" to="/faq">
                   FAQ
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="flex flex-wrap justify-between fnav2">
             <div className="flex flex-wrap items-start flex-col pr-[100px]">
-              <a className="pb-1.5 font-normal text-xs" href="#">
+              <Link className="pb-1.5 font-normal text-xs" to="*">
                 NEAR
-              </a>
-              <a className="font-normal text-xs" href="#">
+              </Link>
+              <Link className="font-normal text-xs" to="*">
                 Learn NEAR Club
-              </a>
+              </Link>
             </div>
             <div>
               <a href="#" className="flex flex-wrap items-center">

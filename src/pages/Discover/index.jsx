@@ -11,6 +11,8 @@ import pie from "../../assets/img/pie.png";
 import { Carousel } from "./ui/Carousel";
 import { OurDevs } from "./ui/OurDevs";
 
+import { Link } from "react-router-dom";
+
 export const Discover = () => {
   return (
     <>
@@ -23,9 +25,9 @@ export const Discover = () => {
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <p className="text-[#6398FE] font-medium text-xs">
+            <Link className="text-[#6398FE] font-medium text-xs" to="/">
               Back to Home page
-            </p>
+            </Link>
           </div>
         </div>
         <div className="flex items-start justify-start mb-[60px] flex-col max-w-[790px]">
@@ -150,7 +152,7 @@ export const Discover = () => {
         <div className="font-semibold text-[24px] leading-7 mb-[30px]">
           Our developer communities
         </div>
-        <OurDevs/>
+        <OurDevs />
       </div>
       <Footer />
     </>

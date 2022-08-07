@@ -19,6 +19,9 @@ import arrow from "../../assets/img/arrow.png";
 import arrowUp from "../../assets/img/arrowUp.png";
 import roundsAvatar from "../../assets/img/roundsAvatar.png";
 
+import { Link } from "react-router-dom";
+import { Button } from "../../components/Button";
+
 export const PersonalAccount = () => {
   return (
     <>
@@ -74,12 +77,9 @@ export const PersonalAccount = () => {
               <img src={idk} alt="idk" />
             </a>
           </div>
-          <button
-            type="button"
-            className="text-white bg-gradient-to-br from-[#30CFF2] to-[#6792FF] hover:bg-gradient-to-br font-medium rounded-xl text-xs px-[44px] py-[8px] text-center"
-          >
-            Edit Profil
-          </button>
+          <Link to="/editProfile">
+            <Button text=" Edit Profil" p="px-[44px] py-[8px]" />
+          </Link>
         </div>
       </div>
       <div className="min-container mx-auto mb-7">
