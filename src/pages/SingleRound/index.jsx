@@ -17,9 +17,9 @@ export const SingleRound = () => {
   return (
     <>
       <Header isAuth={true} />
-      <div className="members-wrapper h-[382px]"></div>
-      <div className=" min-container mx-auto flex items-center justify-between my-[30px]">
-        <div className="flex items-center cursor-pointer">
+      <div className="members-wrapper hidden sm:flex h-[120px] md:h-[182px] lg:h-[282] xl:h-[382px]"></div>
+      <div className=" min-container mx-auto flex items-center justify-between my-[21px] sm:my-[30px]">
+        <div className="flex items-center cursor-pointer ml-[15px] md:ml-[0px]">
           <p className="text-[#6398FE] mr-1 text-[10px] leading-[14px]">
             Home / Rounds /
           </p>
@@ -29,14 +29,20 @@ export const SingleRound = () => {
         </div>
         <div className="flex items-center cursor-pointer">
           <img src={arrow} alt="arrow" />
-          <p className="text-[#6398FE] font-medium text-xs">Back to Rounds</p>
+          <p className="text-[#6398FE] font-medium text-xs hidden md:flex">
+            Back to Rounds
+          </p>
+          <p className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4">
+            Back
+          </p>
         </div>
       </div>
-      <div className="min-container mx-auto">
+      <div className="min-members-wrapper flex sm:hidden h-[90px] mb-5"></div>
+      <div className="min-container sm:mx-auto mx-5">
         <div className="">
           <div className="mb-[30px]">
             <div className="flex items-center justify-between mb-[15px]">
-              <div className="flex">
+              <div className="flex ">
                 <div className="py-1 px-[15px] bg-[#F9E4D5] rounded-md text-[10px] leading-[14px] mr-3">
                   NEAR
                 </div>
@@ -44,7 +50,7 @@ export const SingleRound = () => {
                   DEX
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="hidden md:flex items-center">
                 <p className="mr-[14px] text-sm text-[#838B9E]">
                   Share project
                 </p>
@@ -62,11 +68,26 @@ export const SingleRound = () => {
                 </div>
               </div>
             </div>
-            <div className="text-[28px] leading-[34px] font-bold mb-[30px]">
+            <div className="md:text-[28px] md:leading-[34px] font-bold text-[24px] leading-[28px] mb-5 md:mb-[30px]">
               The standard Round
             </div>
-            <div className="flex flex-wrap mb-[30px] ">
-              <div className="pr-[15px] max-w-[790px] w-2/3">
+            <div className="flex items-center md:hidden mb-5">
+              <p className="mr-[14px] text-sm text-[#838B9E]">Share project</p>
+              <div className="flex">
+                <a href="#">
+                  <img src={telegram} alt="telegram" />
+                </a>
+                <a className="mx-7" href="#">
+                  <img src={facebook} alt="facebook" />
+                </a>
+                <a href="#">
+                  {" "}
+                  <img src={twitter} alt="twitter" />
+                </a>
+              </div>
+            </div>
+            <div className="flex mb-[30px] flex-col-reverse md:flex-row ">
+              <div className="md:pr-[15px] md:max-w-[790px] md:w-2/3 w-full">
                 <div className="flex flex-wrap w-full bg-[#F3EFE8] py-[37px] px-[40px] relative rounded-xl  h-[194px]">
                   <div className="relative z-10 w-full">
                     <h2 className="text-xl font-semibold text-[#68AB8F] mb-[6px]">
@@ -96,7 +117,7 @@ export const SingleRound = () => {
                   </div>
                 </div>
               </div>
-              <div className=" pl-[15px] w-1/3">
+              <div className="md:pl-[15px] md:w-1/3 w-full mb-5 md:mb-0">
                 <div className="flex flex-wrap w-full bg-[#FCFCFC] py-[26px] px-[30px] relative rounded-xl border-solid border-[1px] border-[#E3E4EA]">
                   <div className="text-center relative z-10 w-full">
                     <h2 className="font-normal text-[#838B9E] text-sm">
@@ -144,7 +165,7 @@ export const SingleRound = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center flex-wrap justify-between mb-[116px]">
+            <div className="flex items-center flex-wrap justify-between mb-12 md:mb-[116px]">
               <Card />
               <Card />
               <Card />

@@ -39,7 +39,7 @@ export const Header = (props) => {
               <img src={logo} alt="Fundue logo" />
             </Link>
           </a>
-          <div className="flex justify-between items-center">
+          <div className="lg:flex justify-between items-center hidden">
             <div className="pr-[12px] cursor-pointer">
               <img src={search} alt="Search" />
             </div>

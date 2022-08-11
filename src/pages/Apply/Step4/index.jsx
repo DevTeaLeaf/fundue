@@ -18,7 +18,11 @@ export const Step4 = () => {
       <div className="min-container mx-auto">
         <Nav />
         <div className="max-w-[790px]">
-          <img src={step} alt="steps" className="my-[30px] ml-[50px]" />
+          <img
+            src={step}
+            alt="steps"
+            className="hidden md:flex my-[30px] ml-[50px]"
+          />
           <div className="p-[30px] border border-[#E3E4EA] rounded-xl mb-[30px]">
             <div className="mb-6">
               <p className="text-xs text-[#838B9E] mb-[6px]">Stеp 4 of 4</p>
@@ -39,7 +43,7 @@ export const Step4 = () => {
                   <h3 className="text-sm font-medium mb-[6px]">Data</h3>
                   <input
                     type="text"
-                    className="py-3 max-w-[240px] pl-6 border border-[#E3E4EA] rounded-xl outline-none w-full max-h-11 mb-[6px]"
+                    className="py-3 max-w-[240px] pl-6 border border-[#E3E4EA] rounded-xl outline-none w-[140px] md:w-full max-h-11 mb-[6px]"
                   />
                 </div>
                 <div>
@@ -47,9 +51,11 @@ export const Step4 = () => {
                   <div className="flex items-center">
                     <input
                       type="text"
-                      className="py-3 max-w-[204px] px-[87px] border border-[#E3E4EA] rounded-xl outline-none w-full max-h-11 mb-[6px]"
+                      className="py-3 max-w-[204px] px-[70px] md:px-[87px] border border-[#E3E4EA] rounded-xl outline-none w-[140px] md:w-full max-h-11 mb-[6px]"
                     />
-                    <p className="font-medium text-sm ml-[6px]">$NEAR</p>
+                    <p className="font-medium text-sm ml-[6px] hidden md:flex">
+                      $NEAR
+                    </p>
                   </div>
                 </div>
               </div>
@@ -67,7 +73,7 @@ export const Step4 = () => {
                   <h3 className="text-sm font-medium mb-[6px]">Data</h3>
                   <input
                     type="text"
-                    className="py-3 max-w-[240px] pl-6 border border-[#E3E4EA] rounded-xl outline-none w-full max-h-11 mb-[6px]"
+                    className="py-3 max-w-[240px] pl-6 border border-[#E3E4EA] rounded-xl outline-none w-[140px] md:w-full max-h-11 mb-[6px]"
                   />
                 </div>
                 <div>
@@ -75,15 +81,17 @@ export const Step4 = () => {
                   <div className="flex items-center">
                     <input
                       type="text"
-                      className="py-3 max-w-[204px] px-[87px] border border-[#E3E4EA] rounded-xl outline-none w-full max-h-11 mb-[6px]"
+                      className="py-3 max-w-[204px] px-[70px] md:px-[87px] border border-[#E3E4EA] rounded-xl outline-none  w-[140px] md:w-full max-h-11 mb-[6px]"
                     />
-                    <p className="font-medium text-sm ml-[6px]">$NEAR</p>
+                    <p className="font-medium text-sm ml-[6px] hidden md:flex">
+                      $NEAR
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center mb-[150px]">
+          <div className="flex justify-center items-center mb-[48px] md:mb-[150px]">
             <Link
               className="cursor-pointer flex items-center pr-[15px]"
               to="/apply/step-3"

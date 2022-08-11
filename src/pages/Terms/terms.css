@@ -1,3 +1,10 @@
 .terms-wrapper {
   background-image: url("../../assets/img/termsBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.min-terms-wrapper {
+  background-image: url("../../assets/img/minTermsBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

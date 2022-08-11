@@ -5,7 +5,7 @@ export const TableRow = () => {
     <tr className="border-b">
       <th
         scope="row"
-        className="py-[12px] px-[30px] font-medium flex items-center"
+        className="py-[12px] px-[15px] md:px-[30px] font-medium flex items-center"
       >
         <img src={roundsAvatar} alt="avatar" className="mr-3" />
         <div>
@@ -22,8 +22,8 @@ export const TableRow = () => {
           </div>
         </div>
       </th>
-      <td className="py-[12px]  px-[30px] ">
-        <div className="flex items-center ">
+      <td className="md:py-[12px]  md:px-[30px] hidden md:table-cell">
+        <div>
           <p className="py-1 px-[15px] bg-[#F9E4D5] w-[60px] flex items-center text-[10px] leading-[14px] rounded-md justify-center">
             NEAR
           </p>
@@ -32,9 +32,11 @@ export const TableRow = () => {
           </p>
         </div>
       </td>
-      <td className="py-[12px]  px-[30px] text-sm">4,096</td>
-      <td className="py-[12px] px-[30px] ">
-        <div>
+      <td className="md:py-[12px]  md:px-[30px] text-sm hidden md:table-cell">
+        4,096
+      </td>
+      <td className="md:py-[12px] md:px-[30px] hidden md:table-cell">
+        <div className="">
           <div className="text-sm text-[#68AB8F] font-medium">20,000 $NEAR</div>
           <div className="text-[10px] leading-[14px] text-[#838B9E]">
             ≈ 200,000 USD

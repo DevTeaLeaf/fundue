@@ -18,7 +18,11 @@ export const Step3 = () => {
       <div className="min-container mx-auto">
         <Nav />
         <div className="max-w-[790px]">
-          <img src={step} alt="steps" className="my-[30px] ml-[50px]" />
+          <img
+            src={step}
+            alt="steps"
+            className="hidden md:flex my-[30px] ml-[50px]"
+          />
           <div className="p-[30px] border border-[#E3E4EA] rounded-xl mb-[30px]">
             <div className="mb-6">
               <p className="text-xs text-[#838B9E] mb-[6px]">Stеp 3 of 4</p>
@@ -28,7 +32,7 @@ export const Step3 = () => {
             </div>
             <Description />
           </div>
-          <div className="flex justify-center items-center mb-[150px]">
+          <div className="flex justify-center items-center  mb-[48px] md:mb-[150px]">
             <Link
               className="cursor-pointer flex items-center pr-[15px]"
               to="/apply/step-2"

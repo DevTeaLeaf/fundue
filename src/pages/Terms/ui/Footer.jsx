@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer>
-      <nav className=" bg-black">
+      <nav className="bg-black hidden md:flex">
         <div className="container flex justify-between items-start mx-auto px-[90px] py-[36px] text-white">
           <div className="flex justify-between items-start  min-w-[500px]">
             <div>
@@ -67,6 +67,11 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+      </nav>
+      <nav className="flex justify-center items-center md:hidden">
+        <p className="text-[10px] leading-[14px] text-[#6E768C] mb-3">
+          © 2022 Fundue
+        </p>
       </nav>
     </footer>
   );

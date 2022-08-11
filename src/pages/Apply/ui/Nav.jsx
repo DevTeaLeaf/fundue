@@ -9,13 +9,18 @@ export const Nav = () => {
       <div className="flex items-end justify-end my-[30px]">
         <div className="flex items-end justify-end cursor-pointer">
           <img src={arrow} alt="arrow" />
-          <Link className="text-[#6398FE] font-medium text-xs" to="/rounds">
+          <Link
+            className="text-[#6398FE] font-medium text-xs md:mr-[0px] mr-5"
+            to="/rounds"
+          >
             Back to The standard Round
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between mb-[30px]">
-        <div className="text-3xl font-bold">Apply for The standard Round</div>
+      <div className="flex items-center justify-center lg:justify-between mb-[30px]">
+        <div className="test-[20px] leading-6 font-semibold lg:text-3xl lg:font-bold">
+          Apply for The standard Round
+        </div>
       </div>
     </>
   );

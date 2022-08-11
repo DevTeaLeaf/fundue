@@ -1,3 +1,8 @@
 .round-wrapper {
   background-image: url("../../assets/img/roundBackground.png");
 }
+.min-round-wrapper {
+  background-image: url("../../assets/img/minRoundBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -17,7 +17,11 @@ export const Step1 = () => {
       <div className="min-container mx-auto">
         <Nav />
         <div className="max-w-[790px]">
-          <img src={step} alt="steps" className="my-[30px] ml-[50px]" />
+          <img
+            src={step}
+            alt="steps"
+            className="hidden md:flex my-[30px] ml-[50px]"
+          />
           <div className="p-[30px] border border-[#E3E4EA] rounded-xl mb-[30px]">
             <div className="mb-6">
               <p className="text-xs text-[#838B9E] mb-[6px]">Stеp 1 of 4</p>
@@ -53,7 +57,7 @@ export const Step1 = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center mb-[150px]">
+          <div className="flex justify-center items-center md:mb-[150px] mb-[22px]">
             <div className="opacity-20 flex items-center pr-[15px]">
               <img src={arrow} alt="arrow" />
               <p className="text-[#6398FE] text-xs font-medium">Back</p>

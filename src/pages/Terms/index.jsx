@@ -11,33 +11,36 @@ export const Terms = () => {
   return (
     <>
       <Header isAuth={false} />
-      <div className="terms-wrapper">
-        <div className="min-container mx-auto">
-          <div className="flex items-center justify-between py-10">
-            <h1 className="text-5xl font-semibold text-[#fcfcfc]">
-              Terms of Use
-            </h1>
-            <img src={paper} alt="paper" />
-          </div>
-        </div>
-      </div>
+      <div className="terms-wrapper hidden sm:flex h-[382px]"></div>
       <div className="min-container mx-auto">
-        <div className="flex items-center justify-between my-[30px]">
-          <div className="flex items-center cursor-pointer">
+        <div className="flex items-center justify-between my-5 md:my-[30px]">
+          <div className="flex items-center cursor-pointer ml-5 md:ml-0 text-[10px] leading-[14px]">
             <p className="text-[#6398FE] mr-1">Home /</p>
             <p className="text-[#6E768C]">Fundue Terms of Use</p>
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <Link className="text-[#6398FE] font-medium text-xs" to="/">
+            <Link
+              className="text-[#6398FE] font-medium text-xs hidden md:flex"
+              to="/"
+            >
               Back to Home page
+            </Link>
+            <Link
+              className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+              to="/"
+            >
+              Back
             </Link>
           </div>
         </div>
-        <div className="mb-[114px] p-[30px]">
+        <div className="min-terms-wrapper flex sm:hidden h-[90px]"></div>
+        <div className="mb-12 md:mb-[114px] p-[30px]">
           <div className="mb-6">
             <div className="flex items-center justify-between mb-5">
-              <div className="text-3xl font-bold">Fundue Terms of Use</div>
+              <div className="text-3xl font-bold hidden md:flex">
+                Fundue Terms of Use
+              </div>
               <div className="flex items-center">
                 <p className="text-[#838B9E] text-xs mr-3">Last updated: </p>
                 <p className="text-sm">May 11, 2022</p>

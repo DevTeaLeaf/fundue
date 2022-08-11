@@ -12,31 +12,35 @@ export const Rounds = () => {
   return (
     <>
       <Header isAuth={true} />
-      <div className="round-wrapper">
-        <div className="min-container mx-auto">
-          <div className="flex items-center justify-between py-[161px]">
-            <h1 className="text-5xl font-semibold text-[#FCFCFC]">Rounds</h1>
-          </div>
-        </div>
-      </div>
+      <div className="round-wrapper hidden sm:flex h-[382px]"></div>
       <div className="min-container mx-auto">
-        <div className="flex items-center justify-between my-[30px]">
+        <div className="flex items-center justify-between my-5 md:my-[30px] mx-[15px] md:mx-0">
           <div className="flex items-center cursor-pointer">
             <p className="text-[#6398FE] mr-1">Home /</p>
             <p className="text-[#6E768C]">Rounds</p>
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <Link className="text-[#6398FE] font-medium text-xs" to="/">
+            <Link
+              className="text-[#6398FE] font-medium text-xs hidden md:flex"
+              to="/"
+            >
               Back to Home page
+            </Link>
+            <Link
+              className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+              to="/"
+            >
+              Back
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-between mb-[30px]">
+        <div className="min-round-wrapper flex sm:hidden h-[90px] mb-5"></div>
+        <div className="items-center justify-between mb-[30px] hidden md:flex">
           <div className="text-3xl font-bold">Rounds</div>
         </div>
-        <div className="flex flex-wrap mb-[30px]">
-          <div className="pr-[15px] max-w-[790px] w-2/3">
+        <div className="flex mb-[30px] flex-col-reverse md:flex-row mx-5 md:mx-0">
+          <div className="md:pr-[15px] md:max-w-[790px] md:w-2/3 w-full">
             <div className="flex flex-wrap w-full bg-[#F3EFE8] py-[26px] px-[30px] relative rounded-xl  h-[194px]">
               <div className="relative z-10 w-full">
                 <h2 className="text-xl font-semibold text-[#68AB8F] mb-[6px]">
@@ -64,7 +68,7 @@ export const Rounds = () => {
               </div>
             </div>
           </div>
-          <div className=" pl-[15px] w-1/3">
+          <div className="md:pl-[15px] md:w-1/3 w-full mb-5 md:mb-0">
             <div className="flex flex-wrap w-full bg-[#FCFCFC] py-[26px] px-[30px] relative rounded-xl border-solid border-[1px] border-[#E3E4EA]">
               <div className="text-center relative z-10 w-full">
                 <h2 className="font-normal text-[#838B9E] text-sm">

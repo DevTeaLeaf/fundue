@@ -1,3 +1,9 @@
 .members-wrapper {
   background-image: url("../../assets/img/membersBackground.png");
+  background-size: cover;
+}
+.min-members-wrapper {
+  background-image: url("../../assets/img/minMembersBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
