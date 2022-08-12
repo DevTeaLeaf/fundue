@@ -23,17 +23,11 @@ export const TableRow = () => {
         </div>
       </th>
       <td className="md:py-[12px]  md:px-[30px] hidden md:table-cell">
-        <div className="flex">
+        <div>
           <p className="py-1 px-[15px] bg-[#F9E4D5] w-[60px] flex items-center text-[10px] leading-[14px] rounded-md justify-center">
             NEAR
           </p>
-          <p className="py-1 px-[15px] bg-[#D1D1FB] w-[60px] flex items-center text-[10px] leading-[14px] rounded-md justify-center ml-3">
-            NFT
-          </p>
         </div>
-      </td>
-      <td className="md:py-[12px]  md:px-[30px] text-sm hidden md:table-cell">
-        4,096
       </td>
       <td className="md:py-[12px] md:px-[30px] hidden md:table-cell">
         <div className="">

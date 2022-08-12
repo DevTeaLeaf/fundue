@@ -1,15 +1,15 @@
 import React from "react";
 import { useState } from "react";
 
-import logo from "../../assets/img/logo.png";
-import search from "../../assets/img/search.png";
-import cart from "../../assets/img/cart.png";
-import user from "../../assets/img/user.png";
-import down from "../../assets/img/down.png";
+import logo from "../../../assets/img/logo.png";
+import search from "../../../assets/img/search.png";
+import cart from "../../../assets/img/cart.png";
+import user from "../../../assets/img/user.png";
+import down from "../../../assets/img/down.png";
 
-import telegram from "../../assets/img/contacts/telegram.png";
-import twitter from "../../assets/img/contacts/twitter.png";
-import discord from "../../assets/img/contacts/discord.png";
+import telegram from "../../../assets/img/contacts/telegram.png";
+import twitter from "../../../assets/img/contacts/twitter.png";
+import discord from "../../../assets/img/contacts/discord.png";
 
 import "./header.css";
 
@@ -20,7 +20,7 @@ export const Header = (props) => {
 
   return (
     <header>
-      <nav className=" bg-white">
+      <nav className="">
         <div className="container flex flex-wrap justify-between items-center mx-auto px-[90px] h-[50px] xl:h-[72px] relative">
           <div className="hidden xl:flex justify-between items-center DESKTOP-MENU space-x-8">
             <div className="flex justify-between items-center pr-[75px] nav1">
