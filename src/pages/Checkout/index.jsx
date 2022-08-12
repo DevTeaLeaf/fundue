@@ -10,11 +10,11 @@ export const Checkout = () => {
   return (
     <div>
       <Header isAuth={true} />
-      <div className="min-container mx-auto mt-[60px] mb-[330px]">
+      <div className="min-container mx-auto mt-[60px] mb-12 xl:mb-[330px]">
         <div className="mb-[30px]">
           <h1 className="font-bold text-3xl">Project Cart</h1>
         </div>
-        <div className="flex items-center justify-between flex-wrap">
+        <div className="flex items-center justify-center xl:justify-between flex-wrap">
           <div className="max-w-[790px] w-full">
             <div className="flex flex-row items-center mb-[14px]">
               <p className="text-sm font-normal text-[#838B9E] mr-3 ml-[34px]">
@@ -34,7 +34,7 @@ export const Checkout = () => {
               <Row />
             </div>
           </div>
-          <div className="bg-[#E8E8FD] rounded-xl max-w-[380px] max-h-[391px] w-full h-full">
+          <div className="bg-[#E8E8FD] rounded-xl max-w-[380px] max-h-[391px] w-full h-full mt-10 xl:mt-0">
             <div className="p-[30px]">
               <div className="mb-[26px]">
                 <h1 className="font-semibold text-xl mb-3">Summary</h1>

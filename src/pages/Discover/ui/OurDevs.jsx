@@ -12,7 +12,7 @@ export const OurDevs = () => {
   return (
     <>
       <div className="flex items-center justify-between flex-wrap">
-        <div>
+        <div className="hidden md:flex">
           <div className="flex flex-col ">
             <img className="w-[90px] h-[90px]" src={p1} alt="p1" />
             <h3 className="font-medium text-sm mb-1 mt-[18px]">John Doe</h3>
@@ -21,7 +21,7 @@ export const OurDevs = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <div className="flex flex-col ">
             <img className="w-[90px] h-[90px]" src={p2} alt="p2" />
             <h3 className="font-medium text-sm mb-1 mt-[18px]">Kobe Cook</h3>
@@ -30,7 +30,7 @@ export const OurDevs = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <div className="flex flex-col ">
             <img className="w-[90px] h-[90px]" src={p3} alt="p3" />
             <h3 className="font-medium text-sm mb-1 mt-[18px]">
@@ -41,7 +41,7 @@ export const OurDevs = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <div className="flex flex-col ">
             <img className="w-[90px] h-[90px]" src={p4} alt="p4" />
             <h3 className="font-medium text-sm mb-1 mt-[18px]">
@@ -52,7 +52,7 @@ export const OurDevs = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <div className="flex flex-col ">
             <img className="w-[90px] h-[90px]" src={p5} alt="p5" />
             <h3 className="font-medium text-sm mb-1 mt-[18px]">

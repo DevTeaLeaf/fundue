@@ -18,20 +18,29 @@ export const Discover = () => {
     <>
       <Header isAuth={false} />
       <div className="min-container mx-auto">
-        <div className="flex items-center justify-between mt-[30px] mb-[60px]">
-          <div className="flex items-center cursor-pointer">
+        <div className="flex items-center justify-between mt-6 mb-10 md:mt-[30px] md:mb-[60px]">
+          <div className="flex items-center cursor-pointer ml-5 md:ml-0">
             <p className="text-[#6398FE] mr-1">Home /</p>
             <p className="text-[#6E768C]">Discover</p>
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <Link className="text-[#6398FE] font-medium text-xs" to="/">
+            <Link
+              className="text-[#6398FE] font-medium text-xs hidden md:flex"
+              to="/"
+            >
               Back to Home page
+            </Link>
+            <Link
+              className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+              to="/"
+            >
+              Back
             </Link>
           </div>
         </div>
-        <div className="flex items-start justify-start mb-[60px] flex-col max-w-[790px]">
-          <div className="text-3xl font-bold text-[48px] leading-[60px] mb-[17px]">
+        <div className="flex items-start justify-start mb-[60px] flex-col max-w-[790px] mx-5 md:mx-0">
+          <div className="font-semibold text-[32px] leading-9 md:font-bold md:text-[48px] md:leading-[60px] mb-[17px]">
             Our mission is to tackle society's challenges and help bring fresh
             idea to life
           </div>
@@ -40,11 +49,11 @@ export const Discover = () => {
             ideas that will benefit the NEAR ecosystem through Quadratic Funding
           </p>
         </div>
-        <div className="flex flex-wrap w-full bg-[#E8E8FD] py-[43px] pl-[75px] relative rounded-xl  h-[200px] mb-[30px]">
+        <div className="flex flex-wrap w-full bg-[#E8E8FD] p-5 md:py-[43px] md:pl-[75px] relative rounded-xl  h-[200px] mb-[30px]">
           <img
             src={rocket}
             alt="rocket"
-            className="absolute top-[-230px] right-[-200px]"
+            className="hidden md:absolute top-[-230px] right-[-200px]"
           />
           <div className="relative z-10 w-full">
             <h2 className="text-xl text-[20px] leading-6">
@@ -81,7 +90,7 @@ export const Discover = () => {
           </div>
         </div>
         <div className="mb-[30px]">
-          <div className="p-[30px]">
+          <div className="p-5 md:p-[30px]">
             <h3 className="font-semibold text-[24px] leading-[28px] mb-5">
               About Fundue
             </h3>
@@ -123,7 +132,7 @@ export const Discover = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-column">
+            <div className="flex flex-column mx-5 md:mx-0">
               <div className="max-w-[160px]">
                 <img className="mb-3" src={people} alt="calculator" />
                 <p className="text-[#838B9E] text-xs">
@@ -144,12 +153,14 @@ export const Discover = () => {
           </div>
         </div>
       </div>
-      <div className="min-container mx-auto font-semibold text-[24px] leading-7 mb-[30px]">
+      <div className="min-container font-semibold text-[20px] leading-6 md:text-[24px] md:leading-7 mb-[30px] mx-5 md:mx-auto">
         Projects borned with Fundue
       </div>
-      <Carousel />
-      <div className="min-container mx-auto mb-[116px]">
-        <div className="font-semibold text-[24px] leading-7 mb-[30px]">
+      <div className="mx-5 md:mx-0">
+        <Carousel />
+      </div>
+      <div className="min-container mb-12 md:mb-[116px] mx-5 md:mx-auto">
+        <div className="font-semibold  text-[20px] leading-6 md:text-[24px] md:leading-7 mb-[30px]">
           Our developer communities
         </div>
         <OurDevs />

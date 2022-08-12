@@ -1,3 +1,8 @@
 .personal-wrapper {
   background-image: url("../../assets/img/personalBackground.png");
 }
+.min-personal-wrapper {
+  background-image: url("../../assets/img/minPersonalBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

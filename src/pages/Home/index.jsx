@@ -9,20 +9,20 @@ export const Home = () => {
   return (
     <div>
       <Header isAuth={true} />
-      <div className="home-wrapper">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white  pl-[140px]">
-            <h1 className="font-semibold text-5xl mb-8">
+      <div className="home-wrapper h-[100vh] md:h-full">
+        <div className="container mx-auto flex justify-center 2xl:justify-between items-center flex-col 2xl:flex-row">
+          <div className="text-white mt-[100px] 2xl:mt-0 pl-5 lg:pl-[140px]">
+            <h1 className="font-semibold text-[32px] leading-9 md:text-5xl mb-8">
               Discover and Fund Public Goods
             </h1>
-            <p className="font-semibold text-2xl">
+            <p className="font-semibold text-[20px] leading-6 md:text-2xl">
               Fundue sustain projects with Quadratic Funding
             </p>
           </div>
           <section>
-            <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <div className="container py-12 md:px-5 md:py-24 mx-auto flex flex-wrap">
               <div className="lg:w-2/3 cardsWrapper mx-auto">
-                <div className="flex flex-wrap w-full bg-gray-100 p-7 relative mb-[30px] rounded-xl ">
+                <div className="hidden md:flex flex-wrap w-full bg-gray-100 p-7 relative mb-[30px] rounded-xl ">
                   <div className="w-full flex items-center flex-col">
                     <div className="pb-6">
                       <h2 className="font-semibold text-2xl pb-5">
@@ -65,7 +65,7 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className="flex flex-wrap">
-                  <div className="w-1/2 pr-[15px] h-[200px]">
+                  <div className="w-full md:w-1/2 md:pr-[15px] h-[200px]">
                     <div className="flex flex-wrap w-full bg-gray-100 py-[26px] px-[30px] relative rounded-xl">
                       <div className="text-center relative z-10 w-full">
                         <h2 className="  font-normal text-sm text-[#838B9E]">
@@ -81,7 +81,7 @@ export const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="pl-[15px] w-1/2">
+                  <div className="hidden md:flex pl-[15px] w-1/2">
                     <div className="flex flex-wrap w-full bg-gray-100 py-[26px] px-[30px] relative rounded-xl  h-[200px]">
                       <div className="relative z-10 w-full">
                         <h2 className="text-xl font-bold title-font text-[#68AB8F] mt-3 mb-1">
@@ -117,7 +117,9 @@ export const Home = () => {
           </section>
         </div>
       </div>
-      <Footer />
+      <div className="hidden md:block">
+        <Footer />
+      </div>
     </div>
   );
 };

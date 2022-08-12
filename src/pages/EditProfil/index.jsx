@@ -11,19 +11,35 @@ export const EditProfil = () => {
     <>
       <Header isAuth={true} />
       <div className="min-container mx-auto">
-        <Link
-          className="flex items-end justify-end my-[30px] mr-[30px] cursor-pointer"
-          to="/personalAccount"
-        >
-          <img src={arrow} alt="arrow" />
-          <p className="text-[#6398FE] font-medium text-xs">Back to Profile</p>
-        </Link>
-        <div className="mb-[4px] p-[30px]">
-          <div className="flex items-center justify-between text-3xl font-bold mb-[30px]">
+        <div className="flex justify-between md:justify-end md:items-end">
+          <div className="items-center justify-between text-[20px] leading-6 font-semiboldbold ml-5 flex md:hidden">
             Edit Profil
           </div>
-          <div className="flex items-start">
-            <div className="p-[30px] bg-[#E8E8FD] rounded-[12px] max-w-[790px] mr-[15px] w-2/3">
+          <Link
+            className="flex items-end justify-end my-[30px] mr-[30px] cursor-pointer"
+            to="/personalAccount"
+          >
+            <img src={arrow} alt="arrow" />
+            <Link
+              className="text-[#6398FE] font-medium text-xs hidden md:flex"
+              to="/publicProfile"
+            >
+              Back to Profile
+            </Link>
+            <Link
+              className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+              to="/publicProfile"
+            >
+              Back
+            </Link>
+          </Link>
+        </div>
+        <div className="mb-[4px] p-[30px]">
+          <div className="hidden md:flex items-center justify-between text-3xl font-bold mb-[30px]">
+            Edit Profil
+          </div>
+          <div className="flex flex-col lg:flex-row items-start">
+            <div className="p-[30px] bg-[#E8E8FD] rounded-[12px] max-w-[790px] w-full lg:mr-[15px] lg:w-2/3 mb-5 lg:mb-0">
               <h3 className="font-semibold text-[24px] leading-7 mb-6">
                 General information
               </h3>
@@ -51,7 +67,7 @@ export const EditProfil = () => {
                 </div>
               </div>
             </div>
-            <div className="p-[30px] bg-[#F3EFE8] rounded-[12px] max-w-[380px] ml-[15px] w-1/3">
+            <div className="p-[30px] bg-[#F3EFE8] rounded-[12px] max-w-[790px] lg:max-w-[380px] w-full lg:ml-[15px] lg:w-1/3">
               <h3 className="font-semibold text-[24px] leading-7 mb-6">
                 Social Network
               </h3>

@@ -26,7 +26,7 @@ export const PersonalAccount = () => {
   return (
     <>
       <Header isAuth={true} />
-      <div className="personal-wrapper max-h-[280px] mb-[30px]">
+      <div className="personal-wrapper max-h-[280px] mb-[30px] hidden md:block ">
         <div className="min-container mx-auto pb-3 pt-[240px] flex items-end justify-end">
           <img
             className="w-[28px] h-[28px] cursor-pointer"
@@ -35,10 +35,11 @@ export const PersonalAccount = () => {
           />
         </div>
       </div>
+      <div className="min-personal-wrapper h-[90px] mt-5 block md:hidden"></div>
       <div className="min-container mx-auto flex items-center justify-between mb-6">
         <div className="flex">
-          <div className="relative mt-[-60px]">
-            <img src={personalAva} alt="ava" />
+          <div className="absolute top-[75px] md:top-auto md:relative md:mt-[-60px]">
+            <img src={personalAva} alt="ava" className="w-[80px] md:w-auto" />
             <img
               className="cursor-pointer absolute bottom-[8px] right-[8px]"
               src={camera}
@@ -56,7 +57,7 @@ export const PersonalAccount = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-end justify-end">
+        <div className="md:flex flex-col items-end justify-end hidden">
           <div className="flex items-end justify-end mb-[35px]">
             <a className="mr-[28px]" href="#">
               <img src={facebook} alt="facebook" />

@@ -1,3 +1,10 @@
 .faq-wrapper {
   background-image: url("../../assets/img/FAQBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.min-faq-wrapper {
+  background-image: url("../../assets/img/minFAQBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

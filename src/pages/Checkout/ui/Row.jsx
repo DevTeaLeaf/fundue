@@ -20,7 +20,7 @@ export const Row = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between pr-[60px]">
+      <div className="hidden items-center justify-between pr-[60px] md:flex">
         <div className="flex items-center pr-[60px]">
           <div className="font-normal pr-[6px] text-sm text-[#68AB8F]">
             +0 $NEAR

@@ -12,29 +12,32 @@ export const FAQ = () => {
   return (
     <>
       <Header isAuth={true} />
-      <div className="faq-wrapper">
-        <div className="min-container mx-auto">
-          <div className="flex items-center justify-between py-10">
-            <h1 className="text-5xl font-semibold text-[#838B9E]">FAQ</h1>
-            <img src={qm} alt="Question mark" />
-          </div>
-        </div>
-      </div>
+      <div className="faq-wrapper hidden sm:flex h-[382px]"></div>
       <div className="min-container mx-auto">
-        <div className="flex items-center justify-between my-[30px]">
-          <div className="flex items-center cursor-pointer">
+        <div className="flex items-center justify-between my-5 md:my-[30px]">
+          <div className="flex items-center cursor-pointer ml-5 md:ml-0">
             <p className="text-[#6398FE] mr-1">Home /</p>
             <p className="text-[#6E768C]">FAQ</p>
           </div>
           <div className="flex items-center cursor-pointer">
             <img src={arrow} alt="arrow" />
-            <Link className="text-[#6398FE] font-medium text-xs" to="/">
+            <Link
+              className="text-[#6398FE] font-medium text-xs hidden md:flex"
+              to="/"
+            >
               Back to Home page
+            </Link>
+            <Link
+              className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+              to="/"
+            >
+              Back
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-between mb-6">
-          <div className="text-3xl font-bold">FAQ</div>
+        <div className="min-faq-wrapper flex sm:hidden h-[90px] mb-5"></div>
+        <div className="flex items-center justify-between mb-6 mx-5 md:mx-0">
+          <div className="text-3xl font-bold hidden md:flex">FAQ</div>
           <div className="flex items-center">
             <div className="flex border-[1px] rounded-[14px]">
               <button className="flex items-center justify-center py-2 pl-6 pr-3">
@@ -49,14 +52,14 @@ export const FAQ = () => {
               </button>
               <input
                 type="text"
-                className="py-[6px] outline-0 w-[76px] text-xs"
+                className="py-[6px] outline-0 w-[260px] md:w-[76px] text-xs"
                 placeholder="Search..."
               />
             </div>
           </div>
         </div>
-        <div className="mb-[90px] flex items-start justify-between">
-          <div className="px-[15px] py-[30px] mr-[60px]">
+        <div className="mb-12 md:mb-[90px] flex items-start justify-between flex-col xl:flex-row">
+          <div className="px-[15px] py-[30px] mr-0 md:mr-[60px]">
             <div className="font-medium text-sm pb-6">
               Lorem ipsum dolor sit amet
             </div>

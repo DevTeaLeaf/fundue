@@ -10,6 +10,8 @@ import user from "../../assets/img/user.png";
 
 import video from "../../assets/img/video.png";
 
+import { Link } from "react-router-dom";
+
 import telegram from "../../assets/img/links/telegram.png";
 import facebook from "../../assets/img/links/facebook.png";
 import twitter from "../../assets/img/links/twitter.png";
@@ -29,21 +31,30 @@ export const SingleProject = () => {
   return (
     <>
       <Header isAuth={false} />
-      <div className="single-wrapper h-[382px]"></div>
+      <div className="hidden md:flex single-wrapper h-[382px]"></div>
       <div className=" min-container mx-auto flex items-center justify-between my-[30px]">
-        <div className="flex items-center cursor-pointer">
+        <div className="flex items-center cursor-pointer overflow-hidden whitespace-nowrap">
           <p className="text-[#6398FE] mr-1 text-[10px] leading-[14px]">
             Home / Rounds / The standard Round /
           </p>
-          <p className="text-[#6E768C] text-[10px] leading-[14px]">
+          <p className="text-[#6E768C] text-[10px] leading-[14px] overflow-hidden whitespace-nowrap text-ellipsis">
             The standard Lorem Ipsum{" "}
           </p>
         </div>
         <div className="flex items-center cursor-pointer">
           <img src={arrow} alt="arrow" />
-          <p className="text-[#6398FE] font-medium text-xs">
+          <Link
+            className="text-[#6398FE] font-medium text-xs hidden md:flex"
+            to="/rounds"
+          >
             Back to standard Raunds
-          </p>
+          </Link>
+          <Link
+            className="text-[#6398FE] font-medium text-xs flex md:hidden mr-4"
+            to="/rounds"
+          >
+            Back
+          </Link>
         </div>
       </div>
       <div className="min-container mx-auto flex">
