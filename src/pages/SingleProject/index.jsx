@@ -16,7 +16,7 @@ import telegram from "../../assets/img/links/telegram.png";
 import facebook from "../../assets/img/links/facebook.png";
 import twitter from "../../assets/img/links/twitter.png";
 import discord from "../../assets/img/links/discord.png";
-import idk from "../../assets/img/links/discord.png";
+import idk from "../../assets/img/links/idk.png";
 
 import contributor1 from "../../assets/img/contributor1.png";
 import contributor2 from "../../assets/img/contributor2.png";
@@ -32,8 +32,9 @@ export const SingleProject = () => {
     <>
       <Header isAuth={false} />
       <div className="hidden md:flex single-wrapper h-[382px]"></div>
-      <div className=" min-container mx-auto flex items-center justify-between my-[30px]">
-        <div className="flex items-center cursor-pointer overflow-hidden whitespace-nowrap">
+      <div className="flex md:hidden min-single-wrapper h-[90px]"></div>
+      <div className=" min-container mx-auto flex items-center justify-between my-6 md:my-[30px]">
+        <div className="flex items-center cursor-pointer overflow-hidden whitespace-nowrap ml-5 md:ml-0">
           <p className="text-[#6398FE] mr-1 text-[10px] leading-[14px]">
             Home / Rounds / The standard Round /
           </p>
@@ -57,14 +58,14 @@ export const SingleProject = () => {
           </Link>
         </div>
       </div>
-      <div className="min-container mx-auto flex">
-        <div className="w-2/3">
+      <div className="min-container flex flex-col md:flex-row mx-5 md:mx-auto">
+        <div className="md:w-2/3 mb-5 md:mb-0">
           <div className="mb-[30px]">
             <div className="flex items-center justify-between mb-[15px]">
               <div className="py-1 px-[15px] bg-[#F9E4D5] rounded-md text-[10px] leading-[14px]">
                 NEAR
               </div>
-              <div className="flex items-center">
+              <div className="hidden md:flex items-center">
                 <p className="mr-[14px] text-sm text-[#838B9E]">
                   Share project
                 </p>
@@ -82,38 +83,42 @@ export const SingleProject = () => {
                 </div>
               </div>
             </div>
-            <div className="text-[28px] leading-[34px] font-bold">
+            <div className="text-[24px] leading-7 md:text-[28px] md:leading-[34px] font-bold">
               The standard Lorem Ipsum
             </div>
-            <div className="text-[#838B9E] text-sm mt-[27px] flex justify-end items-end mb-[60px]">
-              <a className="flex mr-[26px]" href="#">
-                <img src={telegram} alt="telegram" />
-                <p className="ml-2">Telegram</p>
-              </a>
-              <a className="flex mr-[26px]" href="#">
-                <img src={twitter} alt="twitter" />
-                <p className="ml-2">Twitter</p>
-              </a>
-              <a className="flex mr-[26px]" href="#">
-                <img src={discord} alt="discord" />
-                <p className="ml-2">Discord</p>
-              </a>
-              <a className="flex" href="#">
-                <img src={idk} alt="website" />
-                <p className="ml-2">Website</p>
-              </a>
+            <div className="text-[rgb(131,139,158)] text-sm mt-[27px] flex justify-start md:justify-end items-end mb-[60px]">
+              <div className="flex flex-col md:flex-row mr-[60px] md:mr-0">
+                <a className="flex mb-6 md:mb-0 md:mr-[26px]" href="#">
+                  <img src={telegram} alt="telegram" />
+                  <p className="ml-2">Telegram</p>
+                </a>
+                <a className="flex md:mr-[26px]" href="#">
+                  <img src={twitter} alt="twitter" />
+                  <p className="ml-2">Twitter</p>
+                </a>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <a className="flex  mb-6 md:mb-0 md:mr-[26px]" href="#">
+                  <img src={discord} alt="discord" />
+                  <p className="ml-2">Discord</p>
+                </a>
+                <a className="flex" href="#">
+                  <img src={idk} alt="website" />
+                  <p className="ml-2">Website</p>
+                </a>
+              </div>
             </div>
-            <div className="pb-[3px] flex border-solid border-b-[1px] border-[#E3E4EA] max-w-[790px] mb-[30px]">
-              <p className="text-[#6398FE] text-[16px] leading-[22px] font-medium pb-2 border-solid border-b-2 border-[#6398FE] cursor-pointer">
+            <div className="pb-[3px] flex border-solid border-b-[1px] border-[#E3E4EA] max-w-[790px] md:mb-[30px]">
+              <p className="text-[#6398FE] text-[14px] leading-[18px] md:text-[16px] md:leading-[22px] font-medium pb-2 border-solid border-b-2 border-[#6398FE] cursor-pointer">
                 Vision
               </p>
-              <p className="text-[16px] leading-[22px] mx-10 cursor-pointer">
+              <p className="text-[14px] leading-[18px] md:text-[16px] md:leading-[22px] mx-10 cursor-pointer font-medium md:font-normal">
                 Rules and regulations
               </p>
             </div>
           </div>
           <div className="p-[30px] mb-[30px]">
-            <h3 className="text-[24px] leading-7 font-semibold mb-5">
+            <h3 className="text-[20px] leading-6 md:text-[24px] md:leading-7 font-semibold mb-5">
               Lorem Ipsum
             </h3>
             <div className="text-[#838B9E] text-sm mb-6 max-w-[650px]">
@@ -122,7 +127,7 @@ export const SingleProject = () => {
               Exercitation veniam consequat sunt nostrud amet. Exercitation
               veniam consequat sunt nostrud amet.
             </div>
-            <h3 className="text-[16px] leading-[22px] font-semibold mb-5">
+            <h3 className="text-[16px] leading-5 md:leading-[22px] font-semibold mb-5">
               Amet minim mollit non
             </h3>
             <ul className="font-normal text-sm text-[#838B9E] list-disc pl-5 mb-6">
@@ -148,46 +153,46 @@ export const SingleProject = () => {
               Timeline
             </h1>
             <div>
-              <div className="flex py-5 mb-3 px-[30px] items-center justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
+              <div className="flex flex-col md:flex-row py-[9px] px-[18px] md:py-5 md:px-[30px] mb-3 items-start justify-start md:items-center md:justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
                 <p className="text-sm">
                   We are launching something and it’s important that everyone’s
                   aware.
                 </p>
-                <p className="text-[#838B9E] text-[12px] leading-4">
+                <p className="text-[#838B9E] text-[12px] leading-4 mt-3 md:mt-0">
                   1 day ago
                 </p>
               </div>
-              <div className="flex py-5 mb-3 px-[30px] items-center justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
+              <div className="flex flex-col md:flex-row mb-3 py-[9px] px-[18px] md:py-5 md:px-[30px] items-start justify-start md:items-center md:justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
                 <p className="text-sm">
                   We are launching something and it’s important that everyone’s
                   aware.
                 </p>
-                <p className="text-[#838B9E] text-[12px] leading-4">
+                <p className="text-[#838B9E] text-[12px] leading-4 mt-3 md:mt-0">
                   1 day ago
                 </p>
               </div>
-              <div className="flex py-5 px-[30px] items-center justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
+              <div className="flex flex-col md:flex-row py-[9px] px-[18px] md:py-5 md:px-[30px] items-start justify-start md:items-center md:justify-between max-w-[730px] bg-[#FCFCFC] rounded-xl">
                 <p className="text-sm">
                   We are launching something and it’s important that everyone’s
                   aware.
                 </p>
-                <p className="text-[#838B9E] text-[12px] leading-4">
+                <p className="text-[#838B9E] text-[12px] leading-4 mt-3 md:mt-0">
                   1 day ago
                 </p>
               </div>
             </div>
           </div>
-          <div className="mb-[120px]">
-            <div className="flex items-center justify-between mb-[30px]">
-              <h1 className="font-semibold text-[25px] leading-7">
+          <div className="md:mb-[120px]">
+            <div className="flex items-center justify-between mb-5 md:mb-[30px] flex-col md:flex-row">
+              <h1 className="font-semibold text-[20px] leading-6 md:text-[25px] md:leading-7 mb-3 md:mb-0">
                 Previously projects by John Doe{" "}
               </h1>
-              <p className="text-[#6398FE] text-xs font-medium cursor-pointer">
+              <p className="text-[#6398FE] text-xs font-medium cursor-pointer self-end">
                 All project (2)
               </p>
             </div>
-            <div className="flex">
-              <div className="rounded-[12px] border border-[#E3E4EA] max-w-[380px] mr-[15px]">
+            <div className="flex flex-wrap md:flex-nowrap justify-center">
+              <div className="rounded-[12px] border border-[#E3E4EA] max-w-[380px] mb-[20px] md:mb-0 md:mr-[15px]">
                 <div className="relative">
                   <img className="rounded-t-xl" src={cover1} alt="cover" />
                   <p className="absolute text-[8px] leading-3  top-[12px] right-[12px] bg-[#D4EAE0] rounded-md py-[2px] px-1">
@@ -223,7 +228,7 @@ export const SingleProject = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-[12px] border border-[#E3E4EA] max-w-[380px] ml-[15px]">
+              <div className="rounded-[12px] border border-[#E3E4EA] max-w-[380px] md:ml-[15px]">
                 <div className="relative">
                   <img className="rounded-t-xl" src={cover2} alt="cover" />
                   <p className="absolute text-[8px] leading-3  top-[12px] right-[12px] bg-[#D4EAE0] rounded-md py-[2px] px-1">
@@ -263,7 +268,7 @@ export const SingleProject = () => {
           </div>
         </div>
 
-        <aside className="w-1/3 ml-[30px]">
+        <aside className="md:w-1/3 md:ml-[30px] mb-[50px] md:mb-0">
           <div className="flex flex-wrap flex-col">
             <div className="mb-[30px]">
               <div className="flex flex-wrap w-full bg-[#FCFCFC] p-[30px] relative rounded-xl  max-h-[178px] border border-[#E3E4EA] border-solid">
@@ -277,18 +282,20 @@ export const SingleProject = () => {
                   <div className="flex flex-row mt-6">
                     <div className="flex flex-column w-1/2">
                       <div>
-                        <p className="text-[20px] font-semibold leading-6 mb-[6px]">
+                        <p className="text-[16px] leading-[22px] lg:text-[20px] font-semibold lg:leading-6 mb-[6px]">
                           42,245
                         </p>
-                        <p className="text-xs text-[#838B9E]">Votes received</p>
+                        <p className="text-[10px] leading-3 lg:text-xs text-[#838B9E]">
+                          Votes received
+                        </p>
                       </div>
                     </div>
                     <div className="flex flex-column w-1/2">
                       <div>
-                        <p className="text-[20px] font-semibold leading-6 mb-[6px]">
+                        <p className="text-[16px] leading-[22px] lg:text-[20px] font-semibold lg:leading-6 mb-[6px]">
                           75.13 $NEAR
                         </p>
-                        <p className="text-xs text-[#838B9E]">
+                        <p className="text-[10px] leading-3 lg:text-xs text-[#838B9E]">
                           Community contribution
                         </p>
                       </div>
